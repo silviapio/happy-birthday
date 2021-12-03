@@ -75,6 +75,10 @@ p {
   );
 }
 
+form {
+  font-size: 22px;
+}
+
 .animation-credit > p {
   margin: 0 auto;
   font-size: 14px;
@@ -99,4 +103,10 @@ p {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 80vw;
+  }
 }
