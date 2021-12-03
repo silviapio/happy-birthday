@@ -1,0 +1,102 @@
+:root {
+  --snow: #f0f4f7;
+  --pink-glamour: #ff7979;
+  --nectarine: #ffbe76;
+  --goldish: #f9ca24;
+  --gray: #535c68;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  background: var(--snow);
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 3em;
+  min-width: 350px;
+  max-width: 460px;
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  text-align: center;
+}
+
+.balloon-container {
+  position: absolute;
+  top: -30px;
+  opacity: 0;
+}
+
+.balloon-icon {
+  width: 30px;
+  height: 30px;
+  z-index: 5;
+  animation: fall 2s linear forwards infinite;
+  animation-delay: 1s;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-30vh);
+  }
+  to {
+    transform: translateY(90vh);
+  }
+}
+
+p {
+  font-size: 45px;
+}
+
+.default-body {
+  font-family: "Fuzzy Bubbles", cursive;
+  color: var(--gray);
+  background: var(--nectarine);
+  background: radial-gradient(
+    circle,
+    var(--nectarine) 0%,
+    var(--pink-glamour) 35%,
+    var(--goldish) 100%
+  );
+}
+
+.animation-credit > p {
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  z-index: 10;
+}
+
+.animation-credit {
+  position: fixed;
+  bottom: 5px;
+}
+
+.reload-instructions > p {
+  margin: 0 auto;
+  font-size: 14px;
+  z-index: 10;
+}
+
+.reload-instructions {
+  bottom: 5px;
+}
+
+.hidden {
+  display: none;
+}

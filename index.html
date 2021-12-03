@@ -1,0 +1,38 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body class="default-body" id="body">
+        <div class="container" id="outer-container">
+            <div class="balloon-container" id="balloon-container">
+                <img src="./balloon.svg" class="balloon-icon" id="balloon" />
+            </div>
+            <p id="greeting">Tell me your name...</p>
+            <form>
+                <label class="label-name" id="name">
+                    <input type="text" id="input-name" placeholder="ex: Silvia">
+                </label>
+                <button type="submit">OK!</button>
+            </form>
+
+            <div class="reload-instructions hidden" id="reload">
+                <p>To try again, F5 or reload page</p>
+            </div>
+
+            <div class="animation-credit hidden" id="credits">
+                <p>Balloon icon made by <a href="https://www.flaticon.com/authors/stockio" title="Stockio">Stockio</a>
+                    from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+                <p>Balloon animation done based on <a href="https://codepen.io/saigowthamr/pen/MWYBXwO">saigowtham
+                        codepen</a> </p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
